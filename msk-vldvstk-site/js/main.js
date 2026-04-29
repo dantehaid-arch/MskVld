@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('bookingForm');
   const submitBtn = document.getElementById('submitBtn');
   const statusEl = document.getElementById('formStatus');
-  const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'; // ЗАМЕНИТЕ НА ВАШ ENDPOINT
+  // ВНИМАНИЕ: Замените ссылку ниже на вашу ссылку от Formspree
+  const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'; 
   
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -60,5 +61,4 @@ document.addEventListener('DOMContentLoaded', () => {
       e.target.value = formatted;
     });
   }
-  console.log('🐴🐅 Москва-Владивосток | Site loaded');
 });
